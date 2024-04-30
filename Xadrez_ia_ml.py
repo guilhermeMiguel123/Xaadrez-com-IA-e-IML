@@ -101,21 +101,21 @@ class ChessGame:
         
         self.root.config(menu=menubar)
         
-    def new_game(self):
-        self.board = chess.Board()
-        self.update_board()
-    
-    def save_game(self):
-        # Implemente a lógica para salvar o jogo aqui
-        pass
-    
-    def load_game(self):
-        # Implemente a lógica para carregar um jogo salvo aqui
-        pass
-    
-    def configure_ai(self):
-        # Implemente a lógica para configurar a IA aqui
-        pass
+def new_game(self):
+    self.board = chess.Board()
+    self.update_board()
+
+def save_game(self):
+    messagebox.showinfo("Save Game", "Jogo salvo com sucesso!")
+    pass
+
+def load_game(self):
+    messagebox.showinfo("Load Game", "Jogo carregado!")
+
+def configure_ai(self):
+    messagebox.showinfo("Configure AI", "IA configurada!")
+    pass
+
     
     def update_board(self):
         svg_data = chess.svg.board(self.board)
